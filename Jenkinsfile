@@ -1,5 +1,16 @@
 //This is aws credential method 
-
+//go to aws search for IAM
+//on IAM dashboard under IAM resources click on users
+//create user > add username
+//next > select attached policies directly>
+//checked the checkbox AdministratorAccess >next
+//Create User> view user
+//use the access key and password from aws to below steps
+// access key and password should be add in jenkins> 
+//credential >
+//click on global > 
+//Add Credentials >
+//select username and password add username as access key and password as secret access key and id i have added as it is same Create 
 pipeline {
     agent any
 
@@ -30,7 +41,7 @@ pipeline {
 
                     withCredentials([
                         usernamePassword(
-                            credentialsId: 'aws-credentials',
+                            credentialsId: 'aws-credentials', //this id should be matched or any id you can give but
                             usernameVariable: 'AWS_ACCESS_KEY_ID',
                             passwordVariable: 'AWS_SECRET_ACCESS_KEY'
                         )
