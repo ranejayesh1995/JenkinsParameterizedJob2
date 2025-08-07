@@ -1,4 +1,4 @@
-//This is aws credential method 
+//This is Jenkins pipeline Job using aws credential method 
 //go to aws search for IAM
 //on IAM dashboard under IAM resources click on users
 //create user > add username
